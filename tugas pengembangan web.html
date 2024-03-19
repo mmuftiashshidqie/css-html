@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>site title</title>
+	<style>
+		.navbar {
+			ul {
+				list-style-type: none;
+				padding: 10px;
+				padding-top: 15px;
+				margin: 0 auto;
+				li {
+					padding-top: 100px;
+					display: inline;
+					margin-right: 10px;
+				}
+			}
+
+			height: 50px;
+			background-color: rgb(158, 147, 147);
+		}
+		.container {
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
+		}
+		.siteTitle {
+			background-color: rgb(158, 147, 147);;
+			margin-top: 5px;
+			height: 175px;
+			font-family:'Times New Roman';
+			h1{
+				padding-top: 10px;
+				margin-top: 0;
+				margin-bottom: 0;
+				margin-left: 30px;
+			}
+			h4{
+				margin-top: 0;
+				margin-bottom: 0;
+				margin-left: 30px;
+			}
+		}
+
+		hr{
+			width: 100%;
+		}
+
+		.centerColumn{
+			width: 100%;
+			h2{
+				margin-top: 10px;
+				margin-bottom: 0;
+				margin-left: 15px;
+				font-size: 14px;
+			}
+			h4{
+				margin-top: 0;
+				margin-bottom: 0;
+				margin-left: 15px;
+				font-size: 10px;
+				font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			}
+			p{
+				margin-top: 10px;
+				margin-left: 15px;
+			}
+		}
+
+		.three-row{
+			width: 100%;
+			margin: 0 auto;
+			margin-left: 10px;
+			.column {
+				display: inline-block;
+				width: 30%;
+				margin: 10px;
+				margin-top: 0;
+				vertical-align:top;
+
+				h2{
+					margin-left: 10px;
+					font-size: 14px;
+				}
+				p{
+					margin-left: 10px;
+				}
+
+
+				ul{
+					list-style-type: none;
+					li{
+						margin-bottom: 15px;
+						p{
+							margin-top: 0;
+							margin-bottom: 0;
+							margin-left: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.four-row{
+			width: 100%;
+			margin: 0 auto;
+			margin-left: 10px;
+			margin-top: 10px;
+			.column {
+				display: inline-block;
+				width: 21.8%;
+				margin: 10px;
+				margin-top: 0;
+				vertical-align:top;
+
+				h2{
+					margin-left: 10px;
+					font-size: 14px;
+				}
+				p{
+					margin-left: 10px;
+				}
+
+
+				ul{
+					list-style-type: none;
+					li{
+						margin-bottom: 15px;
+						p{
+							margin-top: 0;
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<ul>
+			<li><a href="./tes.html">Home</a></li>
+			<li><a href="./tes.html">About</a></li>
+			<li><a href="./tes.html">Gallery</a></li>
+			<li><a href="./tes.html">Contact</a></li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="siteTitle">
+			<h1>site title</h1>
+			<h4>fixed 3-column over 4-column layout</h4>
+		</div>
+		<div class="centerColumn">
+			<h2>centerColumn</h2>
+			<h4>sub heading</h4>
+			<p>Augur et fulgente decorus arcu Phoebus acceptus que novem Camenis, 
+				qui salutari levat arte fessos corporis artus, si Palatinas videt aequos aras 
+				remque Romanam Latiumque felix alterum in lustrum meliusque semper prorogat aevom, 
+				quaeque Aventinum tenet Algidumque, quindecim Diana preces virorum curat et votis 
+				puerorum amicas adplicat auris.</p>
+			<hr>
+		</div>
+		<div class="three-row">
+			<div class="column" style="background-color:#aaa;">
+			  <h2>Cell 1</h2>
+			  <p>Augur et fulgente decorus arcu Phoebus acceptus que novem Camenis, 
+				qui salutari levat arte fessos corporis artus</p>
+				<ul>
+					<li>
+						<a href="./tes.html">Link</a>
+						<br>
+						<i>
+							<p>Date</p>
+							<p>puerorum amicas adplicat auris</p>
+						</i>
+					</li>
+				</ul>
+			</div>
+			<div class="column" style="background-color:#aaa;">
+			  	<h2>Cell 2</h2>
+					<p>Augur et fulgente decorus arcu Phoebus acceptus que novem Camenis, 
+						qui salutari levat arte fessos corporis artus, si Palatinas videt aequos aras 
+						remque</p>
+					<br>
+					<p>Romanam Latiumque felix alterum in lustrum meliusque semper prorogat aevom, 
+						quaeque Aventinum tenet Algidumque, quindecim Diana preces virorum curat et votis 
+						puerorum amicas adplicat auris.</p>
+
+			</div>
+			<div class="column" style="background-color:#aaa;">
+			  	<h2>Cell 3</h2>
+					<p>Augur et fulgente decorus arcu Phoebus acceptus que novem Camenis, 
+						qui salutari levat arte fessos corporis artus, si Palatinas videt aequos aras 
+						remque</p>
+					<br>
+					<p>Romanam Latiumque felix alterum in lustrum meliusque semper prorogat aevom, 
+						quaeque Aventinum tenet Algidumque, quindecim Diana preces virorum curat et votis 
+						puerorum amicas adplicat auris.</p>
+			</div>
+		  </div>
+		  <hr>
+	</div>
+
+	<div class="four-row">
+		<div class="column" style="background-color:#aaa;">
+		  <h2>Box 1</h2>
+		  <p>Augur et fulgente decorus arcu Phoebus acceptus que novem Camenis, 
+			qui salutari levat arte fessos corporis artus</p>
+			<ul>
+				<li>
+					<a href="./tes.html">Link...</a>
+				</li>
+			</ul>
+		</div>
+		<div class="column" style="background-color:#aaa;">
+			<h2>Box 2</h2>
+			<p>Augur et fulgente decorus arcu Phoebus acceptus que novem Camenis, 
+			  qui salutari levat arte fessos corporis artus</p>
+			  <ul>
+				  <li>
+					  <a href="./tes.html">Link...</a>
+				  </li>
+			  </ul>
+		  </div>
+		  <div class="column" style="background-color:#aaa;">
+			<h2>Box 3</h2>
+			<p>Augur et fulgente decorus arcu Phoebus acceptus que novem Camenis, 
+			  qui salutari levat arte fessos corporis artus</p>
+			  <ul>
+				  <li>
+					  <a href="./tes.html">Link...</a>
+				  </li>
+			  </ul>
+		  </div>
+		  <div class="column" style="background-color:#aaa;">
+			<h2>Box 4</h2>
+			<p>Augur et fulgente decorus arcu Phoebus acceptus que novem Camenis, 
+			  qui salutari levat arte fessos corporis artus</p>
+			  <ul>
+				  <li>
+					  <a href="./tes.html">Link...</a>
+				  </li>
+			  </ul>
+		  </div>
+		
+	  </div>
+</div>
+
+</body>
+</html>
